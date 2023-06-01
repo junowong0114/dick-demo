@@ -18,94 +18,462 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-1">
-          Maturity Levels
-        </div>
-        <div class="col-10">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" colspan="2">Maturity Levels</th>
+              <th scope="col">
                 <div>-2</div>
                 <div>Non-digital</div>
-              </div>
-              <div class="col">
+              </th>
+              <th scope="col">
                 <div>-1</div>
                 <div>Computerization</div>
-              </div>
-              <div class="col">
+              </th>
+              <th scope="col">
                 <div>0</div>
-                <div>Conncetivity</div>
-              </div>
-              <div class="col">
+                <div>Connectivity</div>
+              </th>
+              <th scope="col">
                 <div>1</div>
                 <div>Visibility</div>
-              </div>
-              <div class="col">
+              </th>
+              <th scope="col">
                 <div>2</div>
                 <div>Transparency</div>
-              </div>
-              <div class="col">
+              </th>
+              <th scope="col">
                 <div>3</div>
                 <div>Predictability</div>
-              </div>
-              <div class="col">
+              </th>
+              <th scope="col">
                 <div>4</div>
                 <div>Adaptability</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-1">
-          SCORE
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          Description
-        </div>
-        <div class="col-10">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col description">
-                Processes are largely manual and paper-based. Undefined and unorganized processes leading to ad-hoc management.
-              </div>
-              <div class="col description">
-                Basic digitization of individual processes/tasks as well as basic systematization of processes. Data is collected and stored digitally, but processes are still largely manual.
-              </div>
-              <div class="col description">
-                Internal IT systems and processes are integrated into a unified system, enabling data exchange and communication between different parts of the production process. 
-              </div>
-              <div class="col description">
-                Vertical networking by the use of sensors and the Internet of Things (IoT), where systems and machines communicate with each other across different levels of the production process creating a "single source of truth" and transparency across all processes and activities.
-              </div>
-              <div class="col description">
-                Horizontal networking using cyber-physical systems, which involves communication and coordination between different systems and processes within the production process. Full aggregation of internal and external real-time data to identify cause-and-effect relationships between events and their root cause.
-              </div>
-              <div class="col description">
-                Application of simulation models, which are built on the basis of real historical data and continuously improved, in order to predict the expected resulting scenarios for certain events or decisions. 
-              </div>
-              <div class="col description">
-                Use of autonomous systems, where machines and systems can make decisions and take actions independently leading to the best scenario to maximize the value for the company and for customers. 
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-1">
-          <select class="custom-select">
-            <option selected>Select</option>
-            <option value="-2">-2</option>
-            <option value="-1">-1</option>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        
+              </th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" colspan="2">Description</th>
+              <td class="description">Processes are largely manual and paper-based. Undefined and unorganized processes leading to ad-hoc management.</td>
+              <td class="description">Basic digitization of individual processes/tasks as well as basic systematization of processes. Data is collected and stored digitally, but processes are still largely manual.</td>
+              <td class="description">Internal IT systems and processes are integrated into a unified system, enabling data exchange and communication between different parts of the production process.</td>
+              <td class="description">Vertical networking by the use of sensors and the Internet of Things (IoT), where systems and machines communicate with each other across different levels of the production process creating a "single source of truth" and transparency across all processes and activities.</td>
+              <td class="description">Horizontal networking using cyber-physical systems, which involves communication and coordination between different systems and processes within the production process. Full aggregation of internal and external real-time data to identify cause-and-effect relationships between events and their root cause.</td>
+              <td class="description">Application of simulation models, which are built on the basis of real historical data and continuously improved, in order to predict the expected resulting scenarios for certain events or decisions.s</td>
+              <td class="description">Use of autonomous systems, where machines and systems can make decisions and take actions independently leading to the best scenario to maximize the value for the company and for customers.</td>
+              <td class="description"></td>
+            </tr>
+            <tr>
+              <th class="vertical-container" scope="row" rowspan="5">
+                <div class="vertical">SMART PRODUCTION</div>
+              </th>
+              <td class="description">Is ERP software in place and is it integrated ?</td>
+              <td class="description">The company has not yet implemented any domains-specific IT software and work is done highly manual and paper-based.</td>
+              <td class="description">Use of basic spreadsheets with templates to manage processes and operations.</td>
+              <td class="description">Invested in a ERP systems, to manage operations.The software may be limited in functionality and may not be fully integrated with other systems.</td>
+              <td class="description">Implemented ERP that is integrated with other systems in the company, providing better visibility into operations.</td>
+              <td class="description">The data from ERP is used for data processing which provides real-time visulization of trends, e.g., customer orders over seasons.</td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">How is material and intermediate products identified on the shopfloor?</td>
+              <td class="description">Paper-based identification and tracking of material</td>
+              <td class="description">Papers and printed sheets are accompanied with paper-based tag which is scanned using barcode scanner to identify material.</td>
+              <td class="description">Movement of papers printed sheets is tracked on the shopfloor using check points (e.g., after quality check) and is recored in system.</td>
+              <td class="description">Shopfloor material identification is real-time and connected to ERP/material system giving real-time visibility on WIP.</td>
+              <td class="description">Complete traceability of materials throughout the production process with time stamps that helps to identify root cause of quality issues and take corrective actions.</td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">Are there sensor technologies for tracking and monitoring production?</td>
+              <td class="description">WIP is not currently tracked. Machine ON/OFF status is only known.</td>
+              <td class="description">Tracking WIP, production orders on shopfloor is paper-based and done manually. Basic sensors are in place but machine data is not monitored or collected.</td>
+              <td class="description">Use of basic sensor technologies, such as temperature sensors or basic pressure sensors. Data may be collected through basic software tools, such as spreadsheets or basic databases.</td>
+              <td class="description">Able to collect shopfloor data with help of sensors and consolidate it into a central system, providing a single view of all relevant information.</td>
+              <td class="description">Comprehensive sensor technologies in place, providing end-to-end visibility into the production process. Using real-time data analytics to monitor key performance indicators and identify trends and patterns.</td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">How is the performance of production machines and systems tracked?</td>
+              <td class="description">There is no tracking of the performance of production systems. Company has to rely on manual inspection to check the functioning of the machines.</td>
+              <td class="description">Monitoring is possible through use of computerised systems but real-time performance is not available.</td>
+              <td class="description">Implementation of sensors to track machine performance in real-time. Data is collected and stored in a centralized system, allowing managers to analyze performance trends and identify issues before they become critical.</td>
+              <td class="description">Connectivity between production systems e.g., MES and other IT systems within the organization, such as the ERP system that allows data analysis for production optimization.</td>
+              <td class="description">There is a real-time view of the entire production process, and data is available to all departments and stakeholders that allow decision-making in real-time.</td>
+              <td class="description">Using advanced analytics and machine learning, able to predict machine performance and maintenance enabling implementation of use cases like predictive maintenance to increase efficiency and reduce downtime.</td>
+              <td class="description">The production systems are self-learning and self-optimizing, and using real-time data and advanced algorithms to continuously improve performance and adapt to changing conditions.</td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">Is data analytics used to gain insights into production process or customer behaviour?</td>
+              <td class="description">Production and customer behavior data is collected manually or not at all. No use of data analytics tool.</td>
+              <td class="description">Collection of production and customer behavior data through basic software tools, such as spreadsheets or basic databases. Data is not yet of the right quantity or quality for data analytics.</td>
+              <td class="description">Data analysis is performed manually and non-systematically on demand.</td>
+              <td class="description">Use of data analytics tools to collect, organize and analyze production and customer behavior data Able to identify trends and patterns in data, but not using the data to drive real-time decision-making.</td>
+              <td class="description">Using the data to make real-time decisions, such as adjusting production schedules or targeting specific customer segments.</td>
+              <td class="description">Use of advanced data analytics tools, such as machine learning and AI, to predict outcomes and optimize production and customer behavior and using data-driven insights to make strategic decisions and continuously improve operations.</td>
+              <td class="description">Decisions are fully automated based on decision engines that process real time data. Use of advanced data analytics tools that are fully integrated with other systems in the company, providing a seamless and flexible operation.</td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="10">
+                <div>SELF-ASSESSMENT SCORE SMART PRODUCTION:</div>
+                <div>Please first select scores</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="4">
+                <div class="vertical">SMART PROCESS</div>
+              </th>
+              <td class="description">Are there any softwares for supplier/customer management? (e.g., CRM, SRM)</td>
+              <td class="description">Machines are manually operated.</td>
+              <td class="description">Machines are automated and can be set up digitally. A digital interface is not available.</td>
+              <td class="description">Basic computerized systems in place to interact with printing machines on the shop floor, such as a simple software interface for setting up and configuring print jobs.</td>
+              <td class="description">Remotely monitor and control machines - printing/cutting/lamination etc., from a central location with the use of advanced computerized system.</td>
+              <td class="description">Data from machine monitoring is used for process control and optimized settings can sent to the machine through remote control</td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">Is there MES software to monitor and control production?</td>
+              <td class="description">Production process is recorded on paper that is passed along with order.</td>
+              <td class="description">Production record is still manual and needs the operator to fill in completion of production step, but there are standard sheets with job information such as production steps and these sheets are recorded digitally in spreadsheets.</td>
+              <td class="description">MES system is inplemented but still requires a lot of manual work such as scanning job order barcode to record start and end of process.</td>
+              <td class="description">MES system is integrated with other systems in the company like ERP/CRM system, creating single data source and linking customer order with production order.</td>
+              <td class="description">The data from MES is processed further using data analytics to create graphs like OEE, downtime. </td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">How are tools identified and how are job configurations sent to the machine?</td>
+              <td class="description">Tools or printing plates have no identification and are sent with paper-based job orders. </td>
+              <td class="description">Machine configuration transferred to the machine digitally e.g., via USB stick. Machine settings are set from machine control.</td>
+              <td class="description">Simple software interfaces or barcode scanners to read job informatio. Machine configurations can be selected from HMI unit on the machine. Tool have special identification tags which can give info about usage.</td>
+              <td class="description">Tools are tracked in the leading system and attached to the customer orders to associate print job with tool. Machine settings can be retrieved automatically based on job orders.</td>
+              <td class="description">Machine settings are constantly analyzed and optimized. </td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">Can the production process be visualized in real-time?</td>
+              <td class="description">There are no digital tracking systems and therefore no real-time visibility of the production process.</td>
+              <td class="description">IT systems, such as a MES or SCADA system is implemented to collect data on the production process. This data is collected periodically and manually.</td>
+              <td class="description">Sensor devices collect data on the production process in real-time and is transmitted to a central system at regular intervals and can be retrieved to know the process status.</td>
+              <td class="description">Real-time data from shopfloor is integrated with other systems such as ERP or SCM for cross-functional collaboration providing holistic view of production process and make data-driven decisions in real-time.</td>
+              <td class="description">The data can be used for use cases like detecting anomalies, predict maintenance requirements, and optimize production in real-time through the use of advanced algorithms.</td>
+              <td class="description">Production issues can be anticipated before they occur through advanced analytics, leading to improved efficiency and productivity.</td>
+              <td class="description">A digital twin automatically adjusts the production process based on real-time data and changing shopfloor conditions.</td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="10">
+                <div>SELF-ASSESSMENT SCORE SMART PROCESS:</div>
+                <div>Please first select scores</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="3">
+                <div class="vertical">SMART SUPPLY CHAIN</div>
+              </th>
+              <td class="description">Are there any softwares for supplier/customer management? (e.g., CRM, SRM)</td>
+              <td class="description">There is no CRM/SRM system in place</td>
+              <td class="description">All supply chain data (data from suppliers, logistics partners and customers) is stored in excel sheets. There are standard excel templates for regular tasks such as goods incoming or dispatch.</td>
+              <td class="description">There are certain IT systems like WMS, SRM, or CRM or even modules of ERP systems that are implemented for managing supply chain tasks. However these systems need manual entry of data.</td>
+              <td class="description">Direct interfaces between internal systems as well as external to suppliers allow seamless data exchange and get real-time data. Manual data entry is no more required.</td>
+              <td class="description">Data analysis allow for visualization of materials status at various junctions in the supply chain and create better estimates about material availability thus helping to plan production process better.</td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">How are suppliers and logistics partners managed?</td>
+              <td class="description">All communication and coordination with supply chain partners are done through traditional methods such as phone calls and physical documents.</td>
+              <td class="description">Managing suppliers and logistics partners by digital documentation through excel sheets. Communication via emails.</td>
+              <td class="description">Better visibility in processes of partner companies and share information with partners through online portals.</td>
+              <td class="description">Connected ecosystem with supply chain partners through EDI to exchange information in real-time. Use of sensors to monitor inventory levels.</td>
+              <td class="description">Use of advanced analytics to optimize inventory levels and collaborate securely with supply chain partners.</td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">Is there an overview of incoming and outgoing material?</td>
+              <td class="description">Tracking is done manually by calling the supply chain partners</td>
+              <td class="description">There are spreadsheets or databases to record raw material and finished goods data. Data entry is manual.</td>
+              <td class="description">Information about receival and dispatch dates are available centrally in a system and are continuously updated.</td>
+              <td class="description">There is seamless exchange of information and data with other partners in supply chain like logistics and transportation company and have clear idea of where the material is.</td>
+              <td class="description">For decision-making, use of real-time supply chain data from all relevant stakeholders and use of analytics to prioritize material in supply chain and avoid delays.</td>
+              <td class="description">Use of AI and ML to predict supply chain risks and optimize demand and supply flow based on scenario simulation.</td>
+              <td class="description">Dynamic supply chain model and use of supply chain twins which can quickly respond to changes in customer demand, market trends, or supply chain disruptions.</td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="10">
+                <div>SELF-ASSESSMENT SCORE SMART SUPPLY CHAIN:</div>
+                <div>Please first select scores</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="6">
+                <div class="vertical">SMART SERVICES</div>
+              </th>
+              <td class="description">Does the company also focus on introducing new products into the market?</td>
+              <td class="description">There is no focus on developing new products and services. Feasible customer requests are handled one at a time but the products are standard since years. </td>
+              <td class="description">The company understands the need for new products and services for competitive purpose. Some efforts are seen but no concrete plans</td>
+              <td class="description">The focus for new product and service introduction has a stepwise plan and a dedicated team/department for focusing on new product introduction is defined.</td>
+              <td class="description">A clear view of the new product or service introduction process helps all employees to contribute to the process. </td>
+              <td class="description">Implemented project management software to track progress and are able to generate reports for regular use.</td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">Are customer preferences and requests used as a feedback for new product and service development?</td>
+              <td class="description">Customer preferences and requests are not document.</td>
+              <td class="description">The new product or service introduction process is informal and relies on manual tracking.</td>
+              <td class="description">Customer preferences and requests are tracked digitally and regularly used for discussion of new product/service introduction.</td>
+              <td class="description">A centralized collection of demands and requests enable report generation on demand for understanding what trend to focus on.</td>
+              <td class="description">Use of advanced analytics to use customer data to identify trends and patterns for support the process</td>
+              <td></td>
+              <td></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">How does the company respond to changing market?</td>
+              <td class="description">Market trends are only identified through network exchanges. No own research is conducted to identify most interesting/ new emerging sectors. </td>
+              <td class="description">Use of basic computer systems to store historical data of customer orders. Customer orders is the only useful internal commodity to learn about the market. </td>
+              <td class="description">Use of own tools to identify new competitors or market innovations and benefit from it to identify potential customers. </td>
+              <td class="description">A strategy is in place to to understand the future business operations and use open source information and connect with existing customer trends to find new key insights.</td>
+              <td class="description">There is enough knowledge about the most valueable customers and market projections that is analyzed on regular basis to improve business profitability and increase trade</td>
+              <td class="description"></td>
+              <td class="description"></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">Can customers get additional service packages such as design services or custom packaging?</td>
+              <td class="description">The services provided are usually standard, and there is a lack of flexibility in meeting the customers' needs</td>
+              <td class="description">Specialized services can be provided but they are limited in scope</td>
+              <td class="description">There is a system in place to track customer interactions and provide value added services. There are some additional services that are offered to the customer to improve their experience. </td>
+              <td class="description">Partners are identified to provide additional services and provided to the customer as additional benefit</td>
+              <td class="description">Customers are suggested additional products or services based on their past behavior or preferences by analyzing their historical data</td>
+              <td class="description"></td>
+              <td class="description"></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">To what extent are customers able to track the progress of their orders through the production process?</td>
+              <td class="description">Company has to rely on manual processes such as paper-based order forms or verbal communication to inform customers about the status of their orders.</td>
+              <td class="description">Use of simple tools like spreadsheets is used to record and update order information. Information has to be requested by the customer and is not readily available for them. </td>
+              <td class="description">Customers get regular emails only when order has passed through certain check points like ready for shipping which may not be in real-time.</td>
+              <td class="description">Customers can track their orders using a user-friendly online portal that is regularly updated.</td>
+              <td class="description">The online portal provides real-time updates about order progress, estimated delivery dates, and any potential delays.</td>
+              <td class="description">Implementation of predictive analytics to provide customers with accurate estimated delivery dates and proactively identify any potential issues that may delay their orders. Personalized recommendations and notifications are offered to customers based on their order history and preferences.</td>
+              <td class="description"></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="description">How can customer request any changes once the order has been placed?</td>
+              <td class="description">Any change from customer during order processing must be communicated manually via phone call</td>
+              <td class="description">Changes made to an order during processing can be communicated more quickly and accurately using digital tools like email or basic software.</td>
+              <td class="description">Customers can track the status of their orders online, and any changes made to an order can be easily communicated to all relevant parties. There are still manual tasks for internal employees.</td>
+              <td class="description">Changes made by customer via online portal to an order are automatically communicated to all relevant systems and personnel due to real-time communication and collaboration between all involved parties.</td>
+              <td class="description">Real-time information of order to the customer enable them to prioritze their order in case of urgency. </td>
+              <td class="description">Predictive information to the customer to plan their orders in advance based on analytics of market shortages</td>
+              <td class="description"></td>
+              <td>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="10">
+                <div>SELF-ASSESSMENT SCORE SMART SERVICES:</div>
+                <div id="smart-services-score">Please first select scores</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+    </script>
   </body>
 </html>

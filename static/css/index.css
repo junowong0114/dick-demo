@@ -1,3 +1,26 @@
+table {
+  position: relative;
+}
+
+thead th[scope="col"] {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background: white;
+  z-index: 100;
+}
+
 .description {
   font-size: small;
+}
+
+.vertical-container {
+  position: relative;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: sticky;
+  top: 70px;
 }
