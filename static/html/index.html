@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="../css/index.css" rel="stylesheet" />
   </head>
@@ -65,9 +66,17 @@
               <td class="description">Use of autonomous systems, where machines and systems can make decisions and take actions independently leading to the best scenario to maximize the value for the company and for customers.</td>
               <td class="description"></td>
             </tr>
-            <tr>
+
+
+
+
+
+
+
+
+            <tr class="smart-production">
               <th class="vertical-container" scope="row" rowspan="5">
-                <div class="vertical">SMART PRODUCTION</div>
+                <div class="vertical text-uppercase">smart production</div>
               </th>
               <td class="description">Is ERP software in place and is it integrated ?</td>
               <td class="description">The company has not yet implemented any domains-specific IT software and work is done highly manual and paper-based.</td>
@@ -78,7 +87,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-production")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -88,7 +97,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-production">
               <td class="description">How is material and intermediate products identified on the shopfloor?</td>
               <td class="description">Paper-based identification and tracking of material</td>
               <td class="description">Papers and printed sheets are accompanied with paper-based tag which is scanned using barcode scanner to identify material.</td>
@@ -98,7 +107,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-production")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -108,7 +117,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-production">
               <td class="description">Are there sensor technologies for tracking and monitoring production?</td>
               <td class="description">WIP is not currently tracked. Machine ON/OFF status is only known.</td>
               <td class="description">Tracking WIP, production orders on shopfloor is paper-based and done manually. Basic sensors are in place but machine data is not monitored or collected.</td>
@@ -118,7 +127,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-production")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -128,7 +137,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-production">
               <td class="description">How is the performance of production machines and systems tracked?</td>
               <td class="description">There is no tracking of the performance of production systems. Company has to rely on manual inspection to check the functioning of the machines.</td>
               <td class="description">Monitoring is possible through use of computerised systems but real-time performance is not available.</td>
@@ -138,7 +147,7 @@
               <td class="description">Using advanced analytics and machine learning, able to predict machine performance and maintenance enabling implementation of use cases like predictive maintenance to increase efficiency and reduce downtime.</td>
               <td class="description">The production systems are self-learning and self-optimizing, and using real-time data and advanced algorithms to continuously improve performance and adapt to changing conditions.</td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-production")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -150,7 +159,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-production">
               <td class="description">Is data analytics used to gain insights into production process or customer behaviour?</td>
               <td class="description">Production and customer behavior data is collected manually or not at all. No use of data analytics tool.</td>
               <td class="description">Collection of production and customer behavior data through basic software tools, such as spreadsheets or basic databases. Data is not yet of the right quantity or quality for data analytics.</td>
@@ -160,7 +169,7 @@
               <td class="description">Use of advanced data analytics tools, such as machine learning and AI, to predict outcomes and optimize production and customer behavior and using data-driven insights to make strategic decisions and continuously improve operations.</td>
               <td class="description">Decisions are fully automated based on decision engines that process real time data. Use of advanced data analytics tools that are fully integrated with other systems in the company, providing a seamless and flexible operation.</td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-production")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -172,15 +181,23 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-production">
               <td class="text-center" colspan="10">
-                <div>SELF-ASSESSMENT SCORE SMART PRODUCTION:</div>
-                <div>Please first select scores</div>
+                <div class="text-uppercase">self-assessment score smart production:</div>
+                <div class="score">Please first select scores</div>
               </td>
             </tr>
-            <tr>
+
+
+
+
+
+
+
+
+            <tr class="smart-process">
               <th scope="row" rowspan="4">
-                <div class="vertical">SMART PROCESS</div>
+                <div class="vertical text-uppercase">smart process</div>
               </th>
               <td class="description">Are there any softwares for supplier/customer management? (e.g., CRM, SRM)</td>
               <td class="description">Machines are manually operated.</td>
@@ -191,7 +208,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-process")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -201,7 +218,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-process">
               <td class="description">Is there MES software to monitor and control production?</td>
               <td class="description">Production process is recorded on paper that is passed along with order.</td>
               <td class="description">Production record is still manual and needs the operator to fill in completion of production step, but there are standard sheets with job information such as production steps and these sheets are recorded digitally in spreadsheets.</td>
@@ -211,7 +228,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-process")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -221,7 +238,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-process">
               <td class="description">How are tools identified and how are job configurations sent to the machine?</td>
               <td class="description">Tools or printing plates have no identification and are sent with paper-based job orders. </td>
               <td class="description">Machine configuration transferred to the machine digitally e.g., via USB stick. Machine settings are set from machine control.</td>
@@ -231,7 +248,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-process")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -241,7 +258,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-process">
               <td class="description">Can the production process be visualized in real-time?</td>
               <td class="description">There are no digital tracking systems and therefore no real-time visibility of the production process.</td>
               <td class="description">IT systems, such as a MES or SCADA system is implemented to collect data on the production process. This data is collected periodically and manually.</td>
@@ -251,7 +268,7 @@
               <td class="description">Production issues can be anticipated before they occur through advanced analytics, leading to improved efficiency and productivity.</td>
               <td class="description">A digital twin automatically adjusts the production process based on real-time data and changing shopfloor conditions.</td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-process")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -262,15 +279,22 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-process">
               <td class="text-center" colspan="10">
-                <div>SELF-ASSESSMENT SCORE SMART PROCESS:</div>
-                <div>Please first select scores</div>
+                <div class="text-uppercase">self-assessment score smart process:</div>
+                <div class="score">Please first select scores</div>
               </td>
             </tr>
-            <tr>
+
+
+
+
+
+
+
+            <tr class="smart-supply-chain">
               <th scope="row" rowspan="3">
-                <div class="vertical">SMART SUPPLY CHAIN</div>
+                <div class="vertical text-uppercase">smart supply chain</div>
               </th>
               <td class="description">Are there any softwares for supplier/customer management? (e.g., CRM, SRM)</td>
               <td class="description">There is no CRM/SRM system in place</td>
@@ -281,7 +305,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-supply-chain")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -291,7 +315,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-supply-chain">
               <td class="description">How are suppliers and logistics partners managed?</td>
               <td class="description">All communication and coordination with supply chain partners are done through traditional methods such as phone calls and physical documents.</td>
               <td class="description">Managing suppliers and logistics partners by digital documentation through excel sheets. Communication via emails.</td>
@@ -301,7 +325,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-supply-chain")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -311,7 +335,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-supply-chain">
               <td class="description">Is there an overview of incoming and outgoing material?</td>
               <td class="description">Tracking is done manually by calling the supply chain partners</td>
               <td class="description">There are spreadsheets or databases to record raw material and finished goods data. Data entry is manual.</td>
@@ -321,7 +345,7 @@
               <td class="description">Use of AI and ML to predict supply chain risks and optimize demand and supply flow based on scenario simulation.</td>
               <td class="description">Dynamic supply chain model and use of supply chain twins which can quickly respond to changes in customer demand, market trends, or supply chain disruptions.</td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-supply-chain")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -333,15 +357,23 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-supply-chain">
               <td class="text-center" colspan="10">
-                <div>SELF-ASSESSMENT SCORE SMART SUPPLY CHAIN:</div>
-                <div>Please first select scores</div>
+                <div class="text-uppercase">sekf-assessment score smart supply chain:</div>
+                <div class="score">Please first select scores</div>
               </td>
             </tr>
-            <tr>
+
+
+
+
+
+
+
+
+            <tr class="smart-services">
               <th scope="row" rowspan="6">
-                <div class="vertical">SMART SERVICES</div>
+                <div class="vertical text-uppercase">smart services</div>
               </th>
               <td class="description">Does the company also focus on introducing new products into the market?</td>
               <td class="description">There is no focus on developing new products and services. Feasible customer requests are handled one at a time but the products are standard since years. </td>
@@ -352,7 +384,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-services")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -362,7 +394,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-services">
               <td class="description">Are customer preferences and requests used as a feedback for new product and service development?</td>
               <td class="description">Customer preferences and requests are not document.</td>
               <td class="description">The new product or service introduction process is informal and relies on manual tracking.</td>
@@ -372,7 +404,7 @@
               <td></td>
               <td></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-services")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -382,7 +414,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-services">
               <td class="description">How does the company respond to changing market?</td>
               <td class="description">Market trends are only identified through network exchanges. No own research is conducted to identify most interesting/ new emerging sectors. </td>
               <td class="description">Use of basic computer systems to store historical data of customer orders. Customer orders is the only useful internal commodity to learn about the market. </td>
@@ -392,7 +424,7 @@
               <td class="description"></td>
               <td class="description"></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-services")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -402,7 +434,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-services">
               <td class="description">Can customers get additional service packages such as design services or custom packaging?</td>
               <td class="description">The services provided are usually standard, and there is a lack of flexibility in meeting the customers' needs</td>
               <td class="description">Specialized services can be provided but they are limited in scope</td>
@@ -412,7 +444,7 @@
               <td class="description"></td>
               <td class="description"></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-services")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -422,7 +454,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-services">
               <td class="description">To what extent are customers able to track the progress of their orders through the production process?</td>
               <td class="description">Company has to rely on manual processes such as paper-based order forms or verbal communication to inform customers about the status of their orders.</td>
               <td class="description">Use of simple tools like spreadsheets is used to record and update order information. Information has to be requested by the customer and is not readily available for them. </td>
@@ -432,7 +464,7 @@
               <td class="description">Implementation of predictive analytics to provide customers with accurate estimated delivery dates and proactively identify any potential issues that may delay their orders. Personalized recommendations and notifications are offered to customers based on their order history and preferences.</td>
               <td class="description"></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-services")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -443,7 +475,7 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-services">
               <td class="description">How can customer request any changes once the order has been placed?</td>
               <td class="description">Any change from customer during order processing must be communicated manually via phone call</td>
               <td class="description">Changes made to an order during processing can be communicated more quickly and accurately using digital tools like email or basic software.</td>
@@ -453,7 +485,7 @@
               <td class="description">Predictive information to the customer to plan their orders in advance based on analytics of market shortages</td>
               <td class="description"></td>
               <td>
-                <select class="custom-select">
+                <select class="custom-select" onchange='selectHandler("smart-services")()'>
                   <option selected>Select</option>
                   <option value="-2">-2</option>
                   <option value="-1">-1</option>
@@ -464,16 +496,166 @@
                 </select>
               </td>
             </tr>
-            <tr>
+            <tr class="smart-services">
               <td class="text-center" colspan="10">
-                <div>SELF-ASSESSMENT SCORE SMART SERVICES:</div>
-                <div id="smart-services-score">Please first select scores</div>
+                <div class="text-uppercase">self-assessment score smart services:</div>
+                <div class="score">Please first select scores</div>
+              </td>
+            </tr>
+
+
+
+
+
+            <tr class="strategy-and-organization">
+              <th scope="row" rowspan="3">
+                <div class="vertical text-uppercase">strategy and organization</div>
+              </th>
+              <td class="description">Does the company have a digital strategy and clear agenda for roadmap?</td>
+              <td class="description">The company doesn't have a defined overall company strategy and plans for digitalization</td>
+              <td class="description">The company defined and formalized an overall company strategy and basic ideas for digitalization goals. Digitalization goals are not a part of company strategy</td>
+              <td class="description">The company has an overall company strategy, which includes some topics that support digitalization </td>
+              <td class="description">The company defined a dedicated digital strategy to drive the digital transformation. Digitalization goals are clearly defined aligned those with the corporate goals and communicated these to all relevant stakeholders. A digital agenda / roadmap with pilot projects / digital initiatives exists.</td>
+              <td class="description">The company defined a dedicated digital strategy with actionable targets and right KPIs. Detailed roadmap for all departments is developed and includes pilots projects and digitalization initiatives to improve operations. </td>
+              <td class="description"></td>
+              <td class="description"></td>
+              <td>
+                <select class="custom-select" onchange='selectHandler("strategy-and-organization")()'>
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="strategy-and-organization">
+              <td class="description">Does the company have responsible teams to implement and steer digitalization projects?</td>
+              <td class="description">Due to lack of a clear strategy for digitalization there is no centralized function to coordinate digitalization efforts.</td>
+              <td class="description">There is no centralized team to plan and implement digitalization initiatives and the  internal IT department is plans digitalization projects.</td>
+              <td class="description">Leaders from all departments are engaged in digitalization projects, and external consultants are brought in as required.</td>
+              <td class="description">There is a transparent process for identifying and prioritizing digitalization projects with cross-functional team. Clear roles and responsibilities established  for digitalization teams. </td>
+              <td class="description">An agile process for implementing digitalization projects and use of advanced project management tools to track progress and measure impact. External network of partners is developed for digitalization purpose.</td>
+              <td class="description"></td>
+              <td class="description"></td>
+              <td>
+                <select class="custom-select" onchange='selectHandler("strategy-and-organization")()'>
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="strategy-and-organization">
+              <td class="description">Does the organization understand the need for sustainability and are sustainability initiatives planned?</td>
+              <td class="description">No clear understanding of sustainability or do not have any sustainability initiatives in place.</td>
+              <td class="description">Basic sustainability initiatives in place, such as recycling programs or energy-efficient practices.</td>
+              <td class="description">Dedicated sustainability function responsible for driving sustainability initiatives.</td>
+              <td class="description">Use of technologies such as the Internet of Things (IoT) to monitor resource consumption in real-time. Actively seeking out new opportunities to improve sustainability and using open innovation strategies to collaborate with partners to drive sustainability.</td>
+              <td class="description">There is transparency with stakeholders about sustainability initiatives and progress. Use of advanced analytics to measure the impact of sustainability initiatives and reporting this information to stakeholders in a transparent manner.</td>
+              <td class="description"></td>
+              <td class="description"></td>
+              <td>
+                <select class="custom-select" onchange='selectHandler("strategy-and-organization")()'>
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="strategy-and-organization">
+              <td class="text-center" colspan="10">
+                <div class="text-uppercase">self-assessment score stragegy and organization:</div>
+                <div class="score">Please first select scores</div>
+              </td>
+            </tr>
+
+
+
+
+
+
+            <tr class="culture-and-mindset">
+              <th scope="row" rowspan="3">
+                <div class="vertical text-uppercase">culture and mindset</div>
+              </th>
+              <td class="description">How familiar are employees with digitalization and are they willing to use digital technologies?</td>
+              <td class="description">Employees are not familiar with digitalization or are hesitant to use digital tools due to lack of understanding of digitalization. No active investment for employee training or upskilling programs.</td>
+              <td class="description">The company uses basic digital tools and encouraging employees to use these tools.</td>
+              <td class="description">Actively investing in employee training and upskilling programs to improve familiarity with digital technologies.Promoting a culture of innovation and experimentation, and employees would be more willing to adopt new digital technologies.</td>
+              <td class="description">A strong focus on employee training and upskilling and employees are fully familiar with available tools. High level of transparency in digitalization efforts, with employees involved in the decision-making process and informed about the company's progress.</td>
+              <td class="description">Employees are fully comfortable with existing tools and willing to be trained for use of advanced digital tools and emerging digital technologies and therefore can adapt quickly with changing digital trends</td>
+              <td class="description"></td>
+              <td class="description"></td>
+              <td>
+                <select class="custom-select" onchange='selectHandler("culture-and-mindset")()'>
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="culture-and-mindset">
+              <td class="description">Are employees willing to collaborate and share their knowledge?</td>
+              <td class="description">Employees keep knowledge for themselves and do not communicate it with others, as it helps individuals to become indispensable. Knowledge is not formalized or documented and employees rely on individual experience.</td>
+              <td class="description">Employees work mainly in silos and may not have access to the tools or platforms needed to collaborate effectively. Knowledge sharing is limited to informal conversations and is not formalized or documented.</td>
+              <td class="description">Collaboration tools and platforms, such as video conferencing and team chat software are available for employees. Collaboration is limited to certain teams and departments.</td>
+              <td class="description">A formalized culture of collaboration and knowledge sharing is in place, with regular opportunities for employees to work together on cross-functional projects. Knowledge management systems facilitate knowledge sharing.</td>
+              <td class="description">All company knowledge and best practices documented and easily accessible to all employees through the use of comprehensive knowledge management system.</td>
+              <td class="description"></td>
+              <td class="description"></td>
+              <td>
+                <select class="custom-select" onchange='selectHandler("culture-and-mindset")()'>
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="culture-and-mindset">
+              <td class="description">Are employees willing to make use of data and trust data to make decisions?</td>
+              <td class="description">Employees do not use data and make decisions solely based on experience and gut feeling.</td>
+              <td class="description">There is some basic data collection and storage capabilities but employees do not use this data and have no expertise to analyse the data</td>
+              <td class="description">Employees take data from IT systems into account for decision making but not fully utilizing the available data sources. They mainly rely on experience.</td>
+              <td class="description">A formal data strategy is in place enabling employees to make use of data for informed decision making but do not have comprehensive understanding.</td>
+              <td class="description">Actively collecting, analyzing, and using data to inform decision making across all areas of the business.</td>
+              <td class="description">An advanced data strategy allows employees to focus on predictive analytics and machine learning. Employees are fully trained in advanced data analysis techniques, and data-driven decision making is an integral part of the company culture.</td>
+              <td class="description">Decision making processes are largely automated, employees supervise the decisions and intervene in exceptional cases only.</td>
+              <td>
+                <select class="custom-select" onchange='selectHandler("culture-and-mindset")()'>
+                  <option selected>Select</option>
+                  <option value="-2">-2</option>
+                  <option value="-1">-1</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="culture-and-mindset">
+              <td class="text-center" colspan="10">
+                <div class="text-uppercase">self-assessment score culture and mindset:</div>
+                <div class="score">Please first select scores</div>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    </script>
   </body>
 </html>
