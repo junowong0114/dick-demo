@@ -1,20 +1,21 @@
 function selectHandler(area) {
-  const func = () => {
-    selectElements = Array.from(document.querySelectorAll(`.${area} select`))
-    displayElement = document.querySelector(`.${area} div.score`)
-
-    subTotalScore = selectElements.reduce((prev, curr) => {
-      if (prev === null) return null
-      if (curr.value === "Select") return null
-      return prev + parseInt(curr.value)
-    }, 0)
-
-    displayElement.innerText = subTotalScore === null ? "Please first select scores" : subTotalScore
-  }
   return () => {
-    func()
+    updateSubTotalScore(area)
     updateTotalScore()
   }
+}
+
+function updateSubTotalScore(area) {
+  selectElements = Array.from(document.querySelectorAll(`.${area} select`))
+  displayElement = document.querySelector(`.${area} div.score`)
+
+  subTotalScore = selectElements.reduce((prev, curr) => {
+    if (prev === null) return null
+    if (curr.value === "Select") return null
+    return prev + parseInt(curr.value)
+  }, 0)
+
+  displayElement.innerText = subTotalScore === null ? "Please first select scores" : subTotalScore
 }
 
 function updateTotalScore() {
