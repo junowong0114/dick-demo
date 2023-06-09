@@ -78,7 +78,6 @@ function updateOverallScore() {
     }, 0)
 
   const areasOfConcern = specialInterestSum === 7 ? allAreas.slice(0, 3) : allAreas
-  console.log(areasOfConcern)
   const overallScore = areasOfConcern
     .map(area => document.querySelector(`tr.${area} div.score`))
     .reduce((prev, curr) => {
