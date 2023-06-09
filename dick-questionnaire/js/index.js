@@ -38,10 +38,10 @@ function specialAverage(area, threshold, quorum) {
   const targetElements = overThresholdCount >= quorum ? importantSelectElements : allSelectElements
   const subTotalScore = targetElements.reduce((prev, curr) => {
     if (prev === null) return null
-    if (curr.value === "Select") return null
+    if (isNaN(curr.value)) return null
     return prev + parseInt(curr.value)
   }, 0)
-  if (allSelectElements.some(element => isNan(element.value))) subTotalScore = null
+  if (allSelectElements.some(element => isNaN(element.value))) subTotalScore = null
 
   return subTotalScore === null ? null : subTotalScore / targetElements.length
 }
