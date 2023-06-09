@@ -41,6 +41,7 @@ function specialAverage(area, threshold, quorum) {
     if (curr.value === "Select") return null
     return prev + parseInt(curr.value)
   }, 0)
+  if (allSelectElements.some(element => isNan(element.value))) subTotalScore = null
 
   return subTotalScore === null ? null : subTotalScore / targetElements.length
 }
@@ -50,7 +51,7 @@ function simpleAverage(area) {
 
   const subTotalScore = allSelectElements.reduce((prev, curr) => {
     if (prev === null) return null
-    if (curr.value === "Select") return null
+    if (isNaN(curr.value)) return null
     return prev + parseInt(curr.value)
   }, 0)
 
